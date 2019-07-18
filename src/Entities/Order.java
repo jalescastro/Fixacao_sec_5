@@ -6,18 +6,20 @@ import java.util.List;
 import Enum.OrderStatus;
 
 public class Order{
-	
+	//Atributos
 	private Date moment;
 	private OrderStatus status;
-	
-	
 	
 	
 	//Composição
 	private Client client;
 	private List<OrderItem> list;
 	
-	public Order(Date date, OrderStatus status2, Client client2) {
+	public Order(Date moment, OrderStatus status, Client client) {
+		
+		this.moment = moment;
+		this.status = status;
+		this.client = client;
 		
 	}
 	

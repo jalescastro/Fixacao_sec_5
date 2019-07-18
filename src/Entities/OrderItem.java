@@ -4,12 +4,15 @@ package Entities;
 
 public class OrderItem{
 	
+	//Atributos
 	private	Integer quantity;
 	private Double price;
 	
 	
 	//composição
 	private Product product;
+	
+	
 	
 	public OrderItem (Integer quantity, Double price,Product product) {
 		this.quantity = quantity;
@@ -20,9 +23,10 @@ public class OrderItem{
 	public OrderItem() {
 		
 	}
+		
 
 	public Integer getQuantity() {
-		return quantity;
+		return this.quantity;
 	}
 
 	public void setQuantity(Integer quantity) {
@@ -30,7 +34,7 @@ public class OrderItem{
 	}
 
 	public Double getPrice() {
-		return price;
+		return this.price;
 	}
 
 	public void setPrice(Double price) {
@@ -38,7 +42,7 @@ public class OrderItem{
 	}
 	
 	public Product getProduct() {
-		return product;
+		return this.product;
 	}
 
 	public void setProduct(Product product) {
